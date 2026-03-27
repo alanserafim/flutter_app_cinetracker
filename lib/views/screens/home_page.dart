@@ -1,5 +1,5 @@
-import 'package:cinetracker/view/components/buttons.dart';
-import 'package:cinetracker/view/screens/search_movies.dart';
+import 'package:cinetracker/views/components/buttons.dart';
+import 'package:cinetracker/views/screens/dashboard.dart';
 import 'package:flutter/material.dart';
 
 class HomePage extends StatelessWidget {
@@ -41,7 +41,7 @@ class HomePage extends StatelessWidget {
                   text: "Quero começar!",
                   icon: Icons.arrow_forward,
                   onTap: () => Navigator.push(context,
-                  MaterialPageRoute(builder: (context) => SearchMovies())),
+                  MaterialPageRoute(builder: (context) => Dashboard())),
                 ),
               ],
             ),

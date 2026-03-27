@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import '../view/screens/home_page.dart';
+import '../views/screens/home_page.dart';
 
 class CineTrack extends StatelessWidget {
   const CineTrack({super.key});

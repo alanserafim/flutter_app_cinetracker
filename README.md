@@ -75,7 +75,9 @@ A ideia do diagrama de classes de domínio é fornecer um documentação enxuta 
     Implementar o uso de Dependency Injection para promover um código mais modular e testável.
 ### Testes unitários
 Para garantir a qualidade e funcionalidade do código foi realizado testes unitários com o framework Flutter Test e o framework Mocktail para simular chamadas da API.
-<img src="./docs/Telas.png" width="1080px" alt="Telas do projeto"/><br>
+
+
+<img src="./docs/Testes.png" width="1080px" alt="Telas do projeto"/><br>
 
 ### Design Patterns
     Utilizar padrões de design apropriados para resolver problemas comuns de desenvolvimento

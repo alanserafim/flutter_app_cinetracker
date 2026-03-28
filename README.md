@@ -20,6 +20,8 @@ As seguintes ferramentas foram usadas na construção do projeto:
 - Flutter
 - Dart
 - API do The Movie Database (TMDB)
+- Mocktail
+- Get It
 
 ### 👉 **_Desenvolvimento Geral_**
 
@@ -72,7 +74,9 @@ A ideia do diagrama de classes de domínio é fornecer um documentação enxuta 
 ### Injeção de Dependência
     Implementar o uso de Dependency Injection para promover um código mais modular e testável.
 ### Testes unitários
-    5 testes unitários garantir a qualidade e funcionalidade do código
+Para garantir a qualidade e funcionalidade do código foi realizado testes unitários com o framework Flutter Test e o framework Mocktail para simular chamadas da API.
+<img src="./docs/Telas.png" width="1080px" alt="Telas do projeto"/><br>
+
 ### Design Patterns
     Utilizar padrões de design apropriados para resolver problemas comuns de desenvolvimento
 ### Interface

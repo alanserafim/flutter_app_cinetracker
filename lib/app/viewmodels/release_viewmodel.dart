@@ -1,6 +1,6 @@
-
-import '../Services/search_movies_service.dart';
+import 'package:cinetracker/app/services/search_for_up_coming_movies.dart';
 import '../models/movie.dart';
+import '../services/search_movies_service.dart';
 
 class ReleasesViewmodel {
   List<Movie> _moviesList = [];

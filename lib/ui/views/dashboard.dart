@@ -1,5 +1,5 @@
-import 'package:cinetracker/views/screens/releases.dart';
-import 'package:cinetracker/views/screens/search_movies.dart';
+import 'package:cinetracker/ui/views/releases.dart';
+import 'package:cinetracker/ui/views/search_movies.dart';
 import 'package:flutter/material.dart';
 
 class Dashboard extends StatefulWidget {

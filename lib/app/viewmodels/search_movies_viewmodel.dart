@@ -1,5 +1,7 @@
-import '../Services/search_movies_service.dart';
+import '../services/search_for_movie_service.dart';
+import '../services/search_movies_service.dart';
 import '../models/movie.dart';
+import '../services/search_popular_movies_service.dart';
 
 class SearchMoviesViewmodel {
   List<Movie> _moviesList = <Movie>[];

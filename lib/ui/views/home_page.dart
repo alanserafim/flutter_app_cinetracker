@@ -1,5 +1,5 @@
-import 'package:cinetracker/views/components/buttons.dart';
-import 'package:cinetracker/views/screens/dashboard.dart';
+import 'package:cinetracker/ui/widgets/buttons.dart';
+import 'package:cinetracker/ui/views/dashboard.dart';
 import 'package:flutter/material.dart';
 
 class HomePage extends StatelessWidget {

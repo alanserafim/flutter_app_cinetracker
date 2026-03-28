@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 import '../../app/viewmodels/release_viewmodel.dart';
-import '../components/movie_card.dart';
+import '../widgets/movie_card.dart';
 import 'movie_details.dart';
 
 class Releases extends StatelessWidget {

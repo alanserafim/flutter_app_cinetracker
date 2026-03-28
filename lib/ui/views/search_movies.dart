@@ -1,5 +1,5 @@
-import 'package:cinetracker/app/viewmodels/search_movies_view_model.dart';
-import 'package:cinetracker/views/components/movie_card.dart';
+import 'package:cinetracker/app/viewmodels/search_movies_viewmodel.dart';
+import 'package:cinetracker/ui/widgets/movie_card.dart';
 import 'package:flutter/material.dart';
 
 import 'movie_details.dart';

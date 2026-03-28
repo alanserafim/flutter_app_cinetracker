@@ -1,4 +1,4 @@
-# Aplicativo CineTrack - Seu descobridor de filmes e séries
+# Aplicativo `cinetracker` - Seu descobridor de filmes
 
 ## Projeto da disciplina
 
@@ -10,7 +10,7 @@
 
 ### Imagens do Projeto
 
-    <img src="./Docs/screens.png" width="1080px" alt="Telas do projeto"/><br>
+<img src="./docs/Telas.png" width="1080px" alt="Telas do projeto"/><br>
 
 ## Ferramentas
 As seguintes ferramentas foram usadas na construção do projeto:
@@ -34,35 +34,28 @@ As seguintes ferramentas foram usadas na construção do projeto:
 
 ## Introdução
 
-Este projeto possui o objetivo principal **implementar um aplicativo de gerenciamento de filmes e séries**.
+Este projeto possui o objetivo principal **implementar um aplicativo descobridor de filmes**.
 
 
 ## Análise técnica
 
 ### Requisitos Funcionais
 
-* **RF01** - Busca Híbrida: O usuário deve buscar por títulos, e o app deve retornar resultados mistos (filmes e séries) usando o endpoint Multi-Search do TMDb.
-* **RF02** - Detalhes Específicos: O app deve identificar se o item é um filme ou série e exibir detalhes pertinentes (ex: "Duração" para filmes e "Número de Temporadas/Episódios" para séries).
-* **RF03** - Biblioteca Unificada: O usuário deve poder salvar ambos na mesma lista de "Interesses" (Watchlist), diferenciando-os visualmente por ícones ou etiquetas.
-* **RF04** - Recomendação Multimídia (IA): O usuário fornece seus gostos, e a IA do Gemini deve sugerir uma mistura equilibrada de filmes e séries.
-
+* **RF01** - Busca: O usuário deve buscar por títulos, e o app deve retornar filmes usando o endpoint TMDb.
+* **RF02** - Detalhes Específicos: O app deve exibir detalhes pertinentes como a descrição do filme.
+* **RF03** - Exibição de novidades e lançamentos: O app deve exibir filme recentes e lançamentos em tela dedicada.
 ### Fluxo de Navegação
 
 Utilizaremos a estrutura clássica de abas (Tab Bar):
 
-* **Tab 1 (Descobrir)**: Barra de busca e lista de filmes populares (TMDb).
-* **Tab 2 (Assistente IA)**: Campo de chat ou formulário de interesses para gerar recomendações.
-* **Tab 3 (Minha Biblioteca)**: Segmented Control entre "Para Assistir" e "Assistidos" (Core Data).
-* **View de Detalhes**: Tela comum acessada por qualquer uma das abas acima, mostrando os dados completos do filme.
-
+* **Tab 1 (Filmes)**: Barra de busca e lista de filmes populares (TMDb).
+* **Tab 2 (Lançamentos)**: Lista de filmes lançados recentemente.
+* **View de Detalhes**: Tela comum acessada por qualquer uma das abas acima, mostrando os dados complementares do filme.
 
 ### Descrição do ambiente técnico
 
-O sistema é composto por um app desenvolvido em Swift e disponibilizado para IOS.
-A persistência local foi realizada por meio de banco de dados relacional utilizando o Core Data.
+O sistema é composto por um app desenvolvido em Flutter e disponibilizado para Android e IOS.
 As informações dos filmes e séries são fornecidadas através da integração com a API do The Movie Database (TMDB).
-O App fornece sugestões personalizadas através da aplicação de inteligência artificial devido a integração com a API do Google AI Studio.
-
 
 ### Diagrama de Classes de Domínio
 
@@ -70,8 +63,20 @@ A ideia do diagrama de classes de domínio é fornecer um documentação enxuta 
 
     <img src="./Docs/driagrama_classes.png" width="480px" alt="diagrama de classes"/><br>
 
+## Evidências avaliativas
 
-### Prototipação
+### Clean Code
+    Seguir as diretrizes básicas de código limpo para garantir legibilidade e manutenção.
+### Padrão Arquitetural - 
+    Utilizar um padrão arquitetural como MVVM
+### Injeção de Dependência
+    Implementar o uso de Dependency Injection para promover um código mais modular e testável.
+### Testes unitários
+    5 testes unitários garantir a qualidade e funcionalidade do código
+### Design Patterns
+    Utilizar padrões de design apropriados para resolver problemas comuns de desenvolvimento
+### Interface
+    3 telas funcionais: ok
 
 O modelo de prototipação escolhido foi o mockup de alta fidelidade com as principais telas da aplicação.
 

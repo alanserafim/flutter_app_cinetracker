@@ -69,8 +69,31 @@ A ideia do diagrama de classes de domínio é fornecer um documentação enxuta 
 
 ### Clean Code
     Seguir as diretrizes básicas de código limpo para garantir legibilidade e manutenção.
-### Padrão Arquitetural - 
-    Utilizar um padrão arquitetural como MVVM
+### Padrão Arquitetural - MVVM
+
+O padrão arquitetural adotado foi o modelo View-Model-ViewModel (MVVM).
+
+```txt
+lib/
+├── app/
+│   ├── di/                 # Injeção de Dependência
+│   ├── helpers/            # Classes auxiliares
+│   ├── models/             # Classes de dados 
+│   ├── services/           # Classes que realizam chamadas para API
+│   └── viewmodels/         # Classes que realizam a lógica de negócio
+├── ui/
+│   ├── views/              # As telas da aplicação
+│   └── widgets/            # Os componentes reutilizáveis
+└── main.dart
+
+```
+
+
+<img src="./docs/mvvm.png" width="1080px" alt="Telas do projeto"/><br>
+
+
+
+    
 ### Injeção de Dependência
     Implementar o uso de Dependency Injection para promover um código mais modular e testável.
 ### Testes unitários

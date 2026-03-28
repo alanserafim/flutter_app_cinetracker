@@ -1,27 +1,20 @@
-import '../services/search_for_movie_service.dart';
-import '../services/search_movies_service.dart';
 import '../models/movie.dart';
-import '../services/search_popular_movies_service.dart';
+import '../services/movie_service.dart';
 
-class SearchMoviesViewmodel {
+class SearchMoviesViewModel {
+  final IMovieService _movieService;
+
+  SearchMoviesViewModel(this._movieService);
+
   List<Movie> _moviesList = <Movie>[];
-
-  Future<List<Movie>> getPopularMovies() async {
-    final SearchMoviesService service = SearchPopularMoviesService();
-    _moviesList = await service.getMovies();
-    return _moviesList;
-  }
+  List<Movie> get moviesList => _moviesList;
 
   Future<List<Movie>> getMovie(String query) async {
     if (query.isEmpty) {
-      _moviesList = await getPopularMovies();
+      _moviesList = await _movieService.getPopularMovies();
     } else {
-      final SearchMoviesService service = SearchForMovieService(query: query);
-      _moviesList = await service.getMovies();
+      _moviesList = await _movieService.searchMovies(query);
     }
-
     return _moviesList;
   }
-
-  List<Movie> get moviesList => _moviesList;
 }

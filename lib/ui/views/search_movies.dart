@@ -1,6 +1,7 @@
 import 'package:cinetracker/app/viewmodels/search_movies_viewmodel.dart';
 import 'package:cinetracker/ui/widgets/movie_card.dart';
 import 'package:flutter/material.dart';
+import 'package:get_it/get_it.dart';
 
 import 'movie_details.dart';
 
@@ -12,7 +13,7 @@ class SearchMovies extends StatefulWidget {
 }
 
 class _SearchMoviesState extends State<SearchMovies> {
-  final SearchMoviesViewmodel viewmodel = SearchMoviesViewmodel();
+  final SearchMoviesViewModel viewmodel = GetIt.I<SearchMoviesViewModel>();
   final TextEditingController textController = TextEditingController();
 
   @override

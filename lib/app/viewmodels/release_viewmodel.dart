@@ -1,13 +1,16 @@
-import 'package:cinetracker/app/services/search_for_up_coming_movies.dart';
 import '../models/movie.dart';
-import '../services/search_movies_service.dart';
+import '../services/movie_service.dart';
 
-class ReleasesViewmodel {
+class ReleasesViewModel {
+  final IMovieService _movieService;
+
+  ReleasesViewModel(this._movieService);
+
   List<Movie> _moviesList = [];
+  List<Movie> get moviesList => _moviesList;
+
   Future<List<Movie>> getUpcomingMovies() async {
-    final SearchMoviesService searchForUpcomingMovies = SearchForUpcomingMovies();
-    _moviesList = await searchForUpcomingMovies.getMovies();
+    _moviesList = await _movieService.getUpcomingMovies();
     return _moviesList;
   }
-  List<Movie> get moviesList => _moviesList;
 }

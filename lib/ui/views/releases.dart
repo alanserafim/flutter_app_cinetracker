@@ -1,12 +1,19 @@
 import 'package:flutter/material.dart';
+import 'package:get_it/get_it.dart';
 
 import '../../app/viewmodels/release_viewmodel.dart';
 import '../widgets/movie_card.dart';
 import 'movie_details.dart';
 
-class Releases extends StatelessWidget {
+class Releases extends StatefulWidget {
   Releases({super.key});
-  final ReleasesViewmodel viewmodel = ReleasesViewmodel();
+
+  @override
+  State<Releases> createState() => _ReleasesState();
+}
+
+class _ReleasesState extends State<Releases> {
+  final ReleasesViewModel viewmodel = GetIt.I<ReleasesViewModel>();
 
   @override
   Widget build(BuildContext context) {

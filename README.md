@@ -91,7 +91,7 @@ possuem nomes significativos e intuitivos aumentando a legibilidade do código.
 
 ### Padrão Arquitetural - MVVM
 
-O padrão arquitetural adotado foi o modelo View-Model-ViewModel (MVVM).
+O padrão arquitetural adotado foi o modelo `View-Model-ViewModel (MVVM)`.
 
 ```txt
 lib/
@@ -108,7 +108,7 @@ lib/
 
 ```
 
-A imagem a seguir exemplifica o padrão MVVM aplicado no projeto. 
+A imagem a seguir exemplifica o padrão `MVVM` aplicado no projeto. 
 
 A model `movie.dart` é responsável por armazenar os dados do filme, 
 a view `release.dart` é responsável por renderizar os componentes, 
@@ -121,7 +121,7 @@ e a viewmodel `release_viewmodel.dart` é responsável pela lógica de negócio.
 ### Injeção de Dependência
 
 Com foco em desacoplamento, testabilidade, modularidade e manutenibilidade de código
-foi aplicado a injeção de dependência utilizando o pacote Get It.
+foi aplicado a injeção de dependência utilizando o pacote `Get It`.
 
 Com o `get_it` criamos um arquivo dedicado exclusivamente a ensinar o aplicativo como construir 
 e fornecer as dependências.
@@ -136,7 +136,7 @@ IMovieService no momento da sua criação. Ela não sabe instanciar esse serviç
 
 
 ### Testes unitários
-Para garantir a qualidade e funcionalidade do código foi realizado testes unitários com o framework Flutter Test e a biblioteca Mocktail para simular chamadas da API.
+Para garantir a qualidade e funcionalidade do código foi realizado testes unitários com o framework `Flutter Test` e a biblioteca `Mocktail` para simular chamadas da API.
 
 
 <img src="./docs/Testes.png" width="1080px" alt="Telas do projeto"/><br>

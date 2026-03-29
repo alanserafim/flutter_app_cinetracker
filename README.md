@@ -3,7 +3,7 @@
 ## Projeto da disciplina
 
 ### Curso:
-* Pós Graduação em Desenvolvimento de aplicativos móveis - PUCPR
+* Pós-Graduação em Desenvolvimento de aplicativos móveis - PUCPR
 
 ### Disciplinas:
 * Desenvolvimento Mobile Professional
@@ -54,12 +54,6 @@ Utilizaremos a estrutura clássica de abas (Tab Bar):
 
 O sistema é composto por um app desenvolvido em Flutter e disponibilizado para Android e IOS.
 As informações dos filmes e séries são fornecidadas através da integração com a API do The Movie Database (TMDB).
-
-### Diagrama de Classes de Domínio
-
-A ideia do diagrama de classes de domínio é fornecer um documentação enxuta que será utilizada como ponto de partida para o desenvolvimento do projeto, sem a preocupação com os demais detalhes da UML.
-
-    <img src="./Docs/driagrama_classes.png" width="480px" alt="diagrama de classes"/><br>
 
 ## Evidências avaliativas
 
@@ -182,20 +176,21 @@ void setupLocator() {
 ```
 
 Ao usar registerLazySingleton, dizemos ao get_it para criar o MovieService e o http.Client apenas uma vez. 
-Toda vez que o aplicativo pedir essa dependência, a mesma instância que já está na memória será devolvida.
+Toda a vez que o aplicativo pedir essa dependência, a mesma instância que já está na memória será devolvida.
 
 
 ### Links do Projeto
 
 * [TMDB API](https://developer.themoviedb.org/reference/getting-started)
-* [Stitch AI Design](https://stitch.withgoogle.com/)
-* [Google AI Studio](https://aistudio.google.com/)
+* [Flutter](https://docs.flutter.dev/)
+* [Flutter test](https://docs.flutter.dev/cookbook/testing/unit/introduction)
+* [Mocktail](https://pub.dev/packages/mocktail)
+* [Get It](https://pub.dev/packages/get_it)
 
-## Conceitos básicos
 
-##### Processo de Desenvolvimento de Software - PDS
+#### Processo de Desenvolvimento de Software - PDS
 
-> O PDS segue a metodologia ágil sendo um abordagem interativa incremental.
+O PDS segue a metodologia ágil sendo uma abordagem interativa incremental.
 
 ### 👨‍💻 Responsável
 

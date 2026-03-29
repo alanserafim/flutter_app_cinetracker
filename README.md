@@ -53,7 +53,7 @@ Utilizaremos a estrutura clássica de abas (Tab Bar):
 ### Descrição do ambiente técnico
 
 O sistema é composto por um app desenvolvido em Flutter e disponibilizado para Android e IOS.
-As informações dos filmes e séries são fornecidadas através da integração com a API do The Movie Database (TMDB).
+As informações dos filmes são fornecidadas através da integração com a API do The Movie Database (TMDB).
 
 ## Evidências avaliativas
 
@@ -129,7 +129,7 @@ A criação da classe abstrata IMovieService garante que qualquer classe que pre
 não precisa saber como eles são buscados (se é via HTTP, banco de dados local ou mock), 
 apenas que os métodos existem.
 As ViewModels recebem a dependência pronta através do construtor. A ViewModel solicita um 
-IMovieService no momento de sua criação. Ela não sabe instanciar esse serviço, ele apenas o consome.
+IMovieService no momento da sua criação. Ela não sabe instanciar esse serviço, ele apenas o consome.
 
 
 <img src="./docs/dependency_injection.png" width="1080px" alt="Telas do projeto"/><br>

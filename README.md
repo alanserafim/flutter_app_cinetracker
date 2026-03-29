@@ -34,7 +34,6 @@ As seguintes ferramentas foram usadas na construção do projeto:
 
 Este projeto possui o objetivo principal **implementar um aplicativo descobridor de filmes**.
 
-
 ## Análise técnica
 
 ### Requisitos Funcionais
@@ -56,6 +55,10 @@ O sistema é composto por um app desenvolvido em Flutter e disponibilizado para 
 As informações dos filmes são fornecidadas através da integração com a API do The Movie Database (TMDB).
 
 ## Evidências avaliativas
+
+### Vídeo explicativo do projeto
+
+* [Youtube](https://youtu.be/ZSrJc253LpU)
 
 ### Interface do Projeto
 

@@ -16,17 +16,18 @@ class MovieService implements IMovieService {
 
   @override
   Future<List<Movie>> getPopularMovies() async {
-    return _fetchMovies(popularMoviesUrl);
+    return await _fetchMovies(popularMoviesUrl);
   }
 
   @override
   Future<List<Movie>> searchMovies(String query) async {
-    return _fetchMovies(movieUrlPrefix + query + movieUrlFilterSulfix);
+    List<Movie> movies = await _fetchMovies(movieUrlPrefix + query + movieUrlFilterSulfix);
+    return movies;
   }
 
   @override
   Future<List<Movie>> getUpcomingMovies() async {
-    return _fetchMovies(upcomingUrl);
+    return await _fetchMovies(upcomingUrl);
   }
 
   Future<List<Movie>> _fetchMovies(String url) async {

@@ -65,14 +65,36 @@ A ideia do diagrama de classes de domínio é fornecer um documentação enxuta 
 
 ### Interface do Projeto
 
-o foco da interface é trazer telas funcionais e intuitivas para o usuário.
+O foco da interface é trazer telas funcionais e intuitivas para o usuário.
 
 
 <img src="./docs/Telas.png" width="1080px" alt="Telas do projeto"/>
 
 
 ### Clean Code
-    Seguir as diretrizes básicas de código limpo para garantir legibilidade e manutenção.
+Foram aplicados princípios de código limpo para garantir legibilidade e manutenção do código.
+Entre eles os que mais se destacam são:
+
+>1. Princípio de Responsabilidade Única (SRP - Single Responsibility Principle)
+
+Separação clara de diretórios, cada classe ou arquivo com propósito único e bem definido.
+
+>2. DRY (Don't Repeat Yourself - Não se repita)
+
+Uso de componentes reutilizáveis para evitar repetição de código.
+
+>3. Encapsulamento de Estado
+
+Utilização de atributos privados e métodos públicos para proteger a consistência dos dados sempre
+que necessário.
+
+>4. Nomes Significativos (Meaningful Names)
+
+Para evitar a necessidade de comentários explicativos no código todas as variáveis e métodos 
+possuem nomes significativos e intuitivos aumentando a legibilidade do código.
+
+
+
 ### Padrão Arquitetural - MVVM
 
 O padrão arquitetural adotado foi o modelo View-Model-ViewModel (MVVM).
@@ -154,7 +176,6 @@ instância em todo o ciclo de vida do aplicativo e fornece um ponto global de ac
 ```dart
 // app/di/locator.dart
 void setupLocator() {
-  // Evidência do padrão Singleton
   getIt.registerLazySingleton<http.Client>(() => http.Client());
   getIt.registerLazySingleton<IMovieService>(() => MovieService(getIt()));
 }

@@ -88,6 +88,12 @@ lib/
 
 ```
 
+A imagem a seguir exemplifica o padrão MVVM aplicado no projeto. 
+
+A model `movie.dart` responsável por armazenar os dados do filme, 
+a view `release.dart` responsável por renderizar os componentes, 
+e a viewmodel `release_viewmodel.dart` responsável pela lógica de negócio.
+
 
 <img src="./docs/mvvm.png" width="1080px" alt="Telas do projeto"/><br>
 

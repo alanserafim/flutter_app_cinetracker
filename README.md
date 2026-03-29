@@ -127,11 +127,42 @@ Para garantir a qualidade e funcionalidade do código foi realizado testes unit�
 
 
 ### Design Patterns
-    Utilizar padrões de design apropriados para resolver problemas comuns de desenvolvimento
+Dentre os padrões de projeto utilizados na aplicação se destacam: 
 
-O modelo de prototipação escolhido foi o mockup de alta fidelidade com as principais telas da aplicação.
+O Padrão criacional `Factory Method`. O padrão Factory fornece uma interface para criar objetos, 
+mas permite ocultar a lógica complexa de instanciação.
 
-    ![Prototipação](./Docs/prototipacao.png)
+```dart
+// app/models/movie.dart
+factory Movie.fromMap(Map<String, dynamic> map) {
+  return Movie(
+    id: map['id'] as int,
+    title: map['title'] as String,
+    imageUrl: map['poster_path'] as String,
+    releaseDate: map['release_date'] as String,
+    overview: map['overview'] as String,
+  );
+}
+```
+O uso da palavra-chave factory na classe Movie. Em vez de instanciar o filme e depois preencher os dados, 
+a fábrica fromMap recebe o mapa do JSON e "fabrica" uma instância válida de Movie pronta para uso.
+
+
+Outro Design Pattern utilizado foi o `Singleton`. O Singleton garante que uma classe tenha apenas uma única 
+instância em todo o ciclo de vida do aplicativo e fornece um ponto global de acesso a ela.
+
+```dart
+// app/di/locator.dart
+void setupLocator() {
+  // Evidência do padrão Singleton
+  getIt.registerLazySingleton<http.Client>(() => http.Client());
+  getIt.registerLazySingleton<IMovieService>(() => MovieService(getIt()));
+}
+```
+
+Ao usar registerLazySingleton, dizemos ao get_it para criar o MovieService e o http.Client apenas uma vez. 
+Toda vez que o aplicativo pedir essa dependência, a mesma instância que já está na memória será devolvida.
+
 
 ### Links do Projeto
 

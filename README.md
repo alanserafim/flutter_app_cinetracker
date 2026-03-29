@@ -97,11 +97,24 @@ e a viewmodel `release_viewmodel.dart` responsável pela lógica de negócio.
 
 <img src="./docs/mvvm.png" width="1080px" alt="Telas do projeto"/><br>
 
-
-
     
 ### Injeção de Dependência
-    Implementar o uso de Dependency Injection para promover um código mais modular e testável.
+
+Com foco em desacoplamento, testabilidade, modularidade e manutenibilidade de código
+foi aplicado a injeção de dependência utilizando o pacote Get It.
+
+Com o `get_it` criamos um arquivo dedicado exclusivamente a ensinar o aplicativo como construir 
+e fornecer as dependências.
+A criação da classe abstrata IMovieService garante que qualquer classe que precise de filmes 
+não precisa saber como eles são buscados (se é via HTTP, banco de dados local ou mock), 
+apenas que os métodos existem.
+As ViewModels recebem a dependência pronta através do construtor. A ViewModel solicita um 
+IMovieService no momento de sua criação. Ela não sabe instanciar esse serviço, ele apenas o consome.
+
+
+<img src="./docs/dependency_injection.png" width="1080px" alt="Telas do projeto"/><br>
+
+
 ### Testes unitários
 Para garantir a qualidade e funcionalidade do código foi realizado testes unitários com o framework Flutter Test e o framework Mocktail para simular chamadas da API.
 

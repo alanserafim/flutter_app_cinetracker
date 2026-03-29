@@ -7,8 +7,12 @@ import '../viewmodels/search_movies_viewmodel.dart';
 final getIt = GetIt.instance;
 
 void setupLocator() {
-  getIt.registerLazySingleton<http.Client>(() => http.Client());
-  getIt.registerLazySingleton<IMovieService>(() => MovieService(getIt()));
-  getIt.registerFactory<ReleasesViewModel>(() => ReleasesViewModel(getIt()));
-  getIt.registerFactory<SearchMoviesViewModel>(() => SearchMoviesViewModel(getIt()));
+  getIt.registerLazySingleton<http.Client>(
+          () => http.Client());
+  getIt.registerLazySingleton<IMovieService>(
+          () => MovieService(getIt()));
+  getIt.registerFactory<ReleasesViewModel>(
+          () => ReleasesViewModel(getIt()));
+  getIt.registerFactory<SearchMoviesViewModel>(
+          () => SearchMoviesViewModel(getIt()));
 }

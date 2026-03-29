@@ -8,10 +8,6 @@
 ### Disciplinas:
 * Desenvolvimento Mobile Professional
 
-### Imagens do Projeto
-
-<img src="./docs/Telas.png" width="1080px" alt="Telas do projeto"/><br>
-
 ## Ferramentas
 As seguintes ferramentas foram usadas na construção do projeto:
 
@@ -67,6 +63,14 @@ A ideia do diagrama de classes de domínio é fornecer um documentação enxuta 
 
 ## Evidências avaliativas
 
+### Interface do Projeto
+
+o foco da interface é trazer telas funcionais e intuitivas para o usuário.
+
+
+<img src="./docs/Telas.png" width="1080px" alt="Telas do projeto"/>
+
+
 ### Clean Code
     Seguir as diretrizes básicas de código limpo para garantir legibilidade e manutenção.
 ### Padrão Arquitetural - MVVM
@@ -90,9 +94,9 @@ lib/
 
 A imagem a seguir exemplifica o padrão MVVM aplicado no projeto. 
 
-A model `movie.dart` responsável por armazenar os dados do filme, 
-a view `release.dart` responsável por renderizar os componentes, 
-e a viewmodel `release_viewmodel.dart` responsável pela lógica de negócio.
+A model `movie.dart` é responsável por armazenar os dados do filme, 
+a view `release.dart` é responsável por renderizar os componentes, 
+e a viewmodel `release_viewmodel.dart` é responsável pela lógica de negócio.
 
 
 <img src="./docs/mvvm.png" width="1080px" alt="Telas do projeto"/><br>
@@ -116,15 +120,14 @@ IMovieService no momento de sua criação. Ela não sabe instanciar esse serviç
 
 
 ### Testes unitários
-Para garantir a qualidade e funcionalidade do código foi realizado testes unitários com o framework Flutter Test e o framework Mocktail para simular chamadas da API.
+Para garantir a qualidade e funcionalidade do código foi realizado testes unitários com o framework Flutter Test e a biblioteca Mocktail para simular chamadas da API.
 
 
 <img src="./docs/Testes.png" width="1080px" alt="Telas do projeto"/><br>
 
+
 ### Design Patterns
     Utilizar padrões de design apropriados para resolver problemas comuns de desenvolvimento
-### Interface
-    3 telas funcionais: ok
 
 O modelo de prototipação escolhido foi o mockup de alta fidelidade com as principais telas da aplicação.
 
